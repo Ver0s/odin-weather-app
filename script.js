@@ -1,7 +1,7 @@
 async function getWeatherData(city) {
 	try {
 		const response = await fetch(
-			`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=cce9db1d405101b4af215855e6397835&units=metric`
+			`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=cce9db1d405101b4af215855e6397835&units=metric`
 		);
 		if (!response.ok) {
 			throw new Error(response.status);
